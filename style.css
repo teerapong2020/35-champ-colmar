@@ -4,17 +4,22 @@ body {
   box-sizing: border-box;
 }
 .navbar {
-  /* position: fixed; */
+  position: fixed;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 16px 24px;
+  width: 100%;
+  
 }
 .logo {
   display: flex;
   flex-direction: row;
-  /* padding: 32px; */
+  margin-left: 32px;
+  margin-right: 32px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .logogray {
   color: gray;
@@ -28,33 +33,39 @@ ul {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  padding-right: 32px;
   list-style: none;
 }
 .iconbar a {
-    color: black;
+  color: black;
   display: flex;
   text-decoration: none;
   justify-content: space-between;
   gap: 1rem;
   list-style: none;
-  &:hover{
+  &:hover {
     color: blue;
   }
+
 }
 .hero {
   background-color: rgb(176, 173, 173);
   display: flex;
   align-items: center;
-  margin: 24px;
+  padding-top: 32px;
+  @media only screen and (max-width: 768px) {
+   display: flex;
+   flex-direction: column;
+}
 }
 .hero img {
-  padding: 32px 24px;
+  margin: 32px 24px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    }
 }
-/* .detail-one{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-} */
+
+
 .button a {
   margin-right: 24px;
   background-color: rgb(76, 76, 76);
@@ -64,9 +75,12 @@ ul {
   padding: 8px;
   display: flex;
   justify-content: center;
+  &:hover {
+    background-color: lightgray;
+  }
 }
-.detail-one{
-    width: 40%;
+.detail-one {
+  width: 40%;
 }
 .detail-one h1 {
   font-size: 60px;
@@ -75,83 +89,339 @@ ul {
   font-size: 20px;
 }
 .information {
-    background-color: rgb(255, 255, 255);
-  padding: 32px 24px;
+  background-color: rgb(255, 255, 255);
+  margin: 32px 24px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   flex-direction: row;
-}
-.right{
-    width: 60%;
-    margin-left: 32px 24px;
-
-}
-.left{
-    width: 40%;
-}
-.right img{
+  @media only screen and (max-width: 768px) {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+}
+.right {
+  width: 60%;
+  margin-left: 32px 24px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+ }
+}
+.left {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+  width: 40%;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+ }
+}
+.right img {
+  width: 100%;
 }
 .\\
 .information h2 {
   font-size: 40px;
-  
 }
-.information p{
-    font-size: 20px;
-}
-.left{
-    padding-left: 24px;
-    display: flex;
-    flex-direction: column;
-}
-.p1{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 20px;
-     align-items: center;
-}
-.p1 img{
-    width: 35%;
-}
-.p2{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    align-items: center;
-}
-.p2 img{
-    width: 35%;
+.information p {
+  font-size: 20px;
 }
 
-.p3{
-    /* background-color: lightgray; */
+.p1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+  
+}
+.p1 img {
+  width: 35%;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+ }
+}
+.p2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+}
+.p2 img {
+  width: 35%;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+ }
+}
+
+.p3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+}
+.p3 img {
+  width: 35%;
+  padding-right: 50px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+ }
+}
+.left a {
+  text-decoration: none;
+  color: rgb(67, 67, 255);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.course {
+  background-color: rgb(176, 173, 173);
+  padding: 24px 72px;
+}
+.course h2 {
+  display: flex;
+  justify-content: center;
+}
+.down {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 32px;
+  @media only screen and (max-width: 768px) {
+    padding: 0;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+ }
+}
+.down h4 {
+  color: grey;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+  
+}
+.down h3,
+h4 {
+  padding-left: 16px;
+}
+.soft p {
+  padding-left: 16px;
+  color: grey;
+  @media only screen and (max-width: 768px) {
+   display: none;
+ }
+}
+.soft {
+  background-color: white;
+  width: 30%;
+  height: auto;
+}
+.soft img {
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.com {
+  background-color: white;
+  width: 30%;
+  height: auto;
+}
+.com img {
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.com p {
+  padding-left: 16px;
+  color: grey;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.Design {
+  background-color: white;
+  width: 30%;
+  height: auto;
+}
+.Design img {
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.Design p {
+  padding-left: 16px;
+  color: grey;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.Data {
+  background-color: white;
+  width: 30%;
+  height: auto;
+  margin-top: 32px;
+}
+.Data img {
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.Data p {
+  padding-left: 16px;
+  color: grey;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.Business {
+  background-color: white;
+  width: 30%;
+  height: auto;
+  margin-top: 32px;
+}
+.Business img {
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.Business p {
+  padding-left: 16px;
+  color: grey;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.Market {
+  background-color: white;
+  width: 30%;
+  height: auto;
+  margin-top: 32px;
+}
+.Market img {
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.Market p {
+  padding-left: 16px;
+  color: grey;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.thesis {
+  background-color: rgb(255, 255, 255);
+  margin: 32px 24px;
+}
+.thesis h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.all-sis {
+  display: flex;
+  flex-direction: row;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.right-sis {
+  width: 60%;
+  margin-left: 32px 24px;
+  
+}
+.right-sis video {
+  width: 100%;
+  height: auto;
+  @media only screen and (max-width: 768px) {
+    width: 500px
+  }
+}
+.right-sis h3 {
+  display: flex;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.right-sis img {
+  width: 100%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.thesis h2 {
+  font-size: 40px;
+  
+}
+.thesis p {
+  font-size: 20px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.leftphoto {
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.leftdetail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  width: 60%;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.leftphoto img {
+  width: 40%;
+  margin-left: 16px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.topleft {
+  margin-bottom: 16px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.last{
+    margin: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-.p3 img{
-    width: 35%;
-    padding-right: 50px;
-}
-.left a{
-    text-decoration: none;
-    color: rgb(67, 67, 255);
-    &:hover{
-        text-decoration: underline;
-    }
-}
-.course{
-   padding: 
-}
-.course h2{
-    display: flex;
-    justify-content: center;
-}
-.down{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.last p{
+    font-size: 15px;
 }
