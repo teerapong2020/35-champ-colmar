@@ -4,24 +4,24 @@ body {
   box-sizing: border-box;
 }
 .navbar {
-    /* position: fixed; */
-  background-color: aquamarine;
+  /* position: fixed; */
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 16px 24px;
 }
-.logo{
-    display: flex;
-    flex-direction: row;
-    padding: 32px;
+.logo {
+  display: flex;
+  flex-direction: row;
+  /* padding: 32px; */
 }
 .logogray {
   color: gray;
 }
 .logolight {
-    display: flex;
-    
+  display: flex;
+
   color: rgb(176, 173, 173);
 }
 ul {
@@ -31,19 +31,127 @@ ul {
   list-style: none;
 }
 .iconbar a {
+    color: black;
   display: flex;
   text-decoration: none;
   justify-content: space-between;
-  gap: 2rem;
-  list-style: none;;
-
+  gap: 1rem;
+  list-style: none;
+  &:hover{
+    color: blue;
+  }
 }
-.hero{
-    background-color: rgb(176, 173, 173);
+.hero {
+  background-color: rgb(176, 173, 173);
+  display: flex;
+  align-items: center;
+  margin: 24px;
+}
+.hero img {
+  padding: 32px 24px;
+}
+/* .detail-one{
     display: flex;
     align-items: center;
+    flex-direction: column;
+} */
+.button a {
+  margin-right: 24px;
+  background-color: rgb(76, 76, 76);
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
 }
-.hero a{
-    background-color: rgb(106, 106, 106);
-    font-size: 50px;
+.detail-one{
+    width: 40%;
+}
+.detail-one h1 {
+  font-size: 60px;
+}
+.detail-one p {
+  font-size: 20px;
+}
+.information {
+    background-color: rgb(255, 255, 255);
+  padding: 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-direction: row;
+}
+.right{
+    width: 60%;
+    margin-left: 32px 24px;
+
+}
+.left{
+    width: 40%;
+}
+.right img{
+    width: 100%;
+}
+.\\
+.information h2 {
+  font-size: 40px;
+  
+}
+.information p{
+    font-size: 20px;
+}
+.left{
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.p1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+     align-items: center;
+}
+.p1 img{
+    width: 35%;
+}
+.p2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.p2 img{
+    width: 35%;
+}
+
+.p3{
+    /* background-color: lightgray; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p3 img{
+    width: 35%;
+    padding-right: 50px;
+}
+.left a{
+    text-decoration: none;
+    color: rgb(67, 67, 255);
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.course{
+   padding: 
+}
+.course h2{
+    display: flex;
+    justify-content: center;
+}
+.down{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
