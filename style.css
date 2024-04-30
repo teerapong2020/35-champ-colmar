@@ -1,3 +1,49 @@
-h1{
-    color: yellowgreen;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+    /* position: fixed; */
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 24px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+}
+.logogray {
+  color: gray;
+}
+.logolight {
+    display: flex;
+    
+  color: rgb(176, 173, 173);
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+}
+.iconbar a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;;
+
+}
+.hero{
+    background-color: rgb(176, 173, 173);
+    display: flex;
+    align-items: center;
+}
+.hero a{
+    background-color: rgb(106, 106, 106);
+    font-size: 50px;
 }
